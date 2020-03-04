@@ -1,0 +1,45 @@
+{
+    "name": "leoloso/graphiql-block-wp-plugin",
+    "type": "wordpress-plugin",
+    "description": "Block for adding a GraphiQL client to query the GraphQL server",
+    "keywords": [
+        "PoP",
+        "WordPress",
+        "GraphQL",
+        "API"
+    ],
+    "homepage": "https://github.com/leoloso/graphiql-block-wp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonardo Losoviz",
+            "email": "leo@getpop.org",
+            "homepage": "https://getpop.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+		"php": "~7.1",
+		"composer/installers": "~1.0",
+        "leoloso/graphiql-wp-block": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leoloso\\GraphiQLBlockWPPlugin\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leoloso\\GraphiQLBlockWPPlugin\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
